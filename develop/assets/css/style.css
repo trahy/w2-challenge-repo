@@ -1,0 +1,295 @@
+:root {
+    --grn: #304529;
+    --gld: darkgoldenrod;
+    --wheat: wheat;
+    --h2font: 1.5em;
+    --bg-rad: 1rem
+}
+
+/* universal styling */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* setting background colour of web page */
+body {
+    background-color: beige;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--grn);
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    padding: 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+nav ul li {
+    font-size: var(--h2font);
+    padding: 0 25px;
+}
+
+.nav-id {
+    /* background-color: red; */
+    text-decoration: none;
+    color: var(--wheat);
+}
+
+/* hover on nav */
+.nav-id:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* styling antonio */
+h1 {
+    text-align: center;
+    line-height: 100%;
+    padding: 100px 0;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 10px;
+    color: var(--gld);
+}
+
+h2 {
+    font-size: var(--h2font);
+    padding: 20px 0;
+}
+
+/* centring about-me section */
+.about-me {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* profile picture */
+#profile-img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 5px var(--gld);
+}
+
+.profile-txt {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--grn);
+    padding: 50px;
+    align-self: center;
+}
+
+#work-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--grn);
+    padding: 100px 0;
+}
+
+/* styling work section */
+.work {
+    background-color: var(--wheat);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-top: 200px;
+}
+
+/* make cards in row and flex wrap */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+    .class-card {
+        width: 50%;
+
+        @media only screen and (max-width: 768px) {
+
+            width: 100%;
+
+        }
+
+    }
+
+    :first-child {
+        width: 100%;
+    }
+
+    /* style cards and set in columns */
+    .work-card {
+        /* background-color: red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: .5rem;
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+        border: 5px solid var(--wheat);
+
+
+        /* card text box */
+        .card-content {
+            text-align: center;
+            background-color: var(--grn);
+            color: white;
+            width: 60%;
+            padding: 1rem;
+            font-size: var(--h2font);
+        }
+    }
+}
+
+/* background images for cards */
+.class-card:nth-child(1) .work-card {
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--bg-rad);
+}
+
+.class-card:nth-child(2) .work-card {
+    background-image: url("../images/image2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--bg-rad);
+}
+
+.class-card:nth-child(3) .work-card {
+    background-image: url("../images/image3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--bg-rad);
+}
+
+.class-card:nth-child(4) .work-card {
+    background-image: url("../images/image4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--bg-rad);
+}
+
+.class-card:nth-child(5) .work-card {
+    background-image: url("../images/image5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--bg-rad);
+}
+
+.work-img {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.class-card {
+    position: relative;
+}
+
+.class-card a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.class-card:hover{
+    border: solid 5px var(--gld);
+    border-radius: var(--bg-rad);
+    opacity: 75%;
+}
+
+/* .work-img :hover {
+    background-color: black;
+} */
+
+footer {
+    background-color: var(--grn);
+    color: var(--wheat);
+    display: flex;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+#contacts {
+    width: 100%;
+}
+
+#contacts h2 {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+
+    text-decoration: none;
+    line-height: 2rem;
+    color: var(--wheat);
+}
+
+/* hover on contact me */
+.contact-info:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 4rem
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    #profile-img {
+        transform: scale(.9);
+    }
+
+    .class-card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    #profile-img {
+        margin: 0 auto;
+    }
+}
