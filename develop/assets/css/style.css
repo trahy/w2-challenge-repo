@@ -17,32 +17,35 @@ body {
     background-color: beige;
 }
 
+/* setting overall width of page */
 .container {
     width: 60%;
     margin: 0 auto;
 }
 
+/* styling of navbar */
 header {
     background-color: var(--grn);
     position: sticky;
     width: 100%;
     top: 0px;
     padding: 25px;
+    z-index: 1;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 nav ul li {
+
     font-size: var(--h2font);
-    padding: 0 25px;
+    padding: 5px 25px;
 }
 
 .nav-id {
-    /* background-color: red; */
     text-decoration: none;
     color: var(--wheat);
 }
@@ -58,7 +61,7 @@ h1 {
     text-align: center;
     line-height: 100%;
     padding: 100px 0;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     letter-spacing: 10px;
     color: var(--gld);
@@ -79,8 +82,10 @@ h2 {
 /* profile picture */
 #profile-img {
     object-fit: cover;
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    width: 50vw;
+    height: 50vw;
     border-radius: 50%;
     border: solid 5px var(--gld);
 }
@@ -109,7 +114,7 @@ h2 {
     margin-top: 200px;
 }
 
-/* make cards in row and flex wrap */
+/* creating card layouts */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -131,9 +136,8 @@ h2 {
         width: 100%;
     }
 
-    /* style cards and set in columns */
+    /* styling cards */
     .work-card {
-        /* background-color: red; */
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -203,6 +207,7 @@ h2 {
     position: relative;
 }
 
+/* turns whole card into clickable link */
 .class-card a::before {
     content: "";
     position: absolute;
@@ -212,16 +217,13 @@ h2 {
     left: 0px;
 }
 
-.class-card:hover{
+.class-card:hover {
     border: solid 5px var(--gld);
     border-radius: var(--bg-rad);
     opacity: 75%;
 }
 
-/* .work-img :hover {
-    background-color: black;
-} */
-
+/* styling of footer */
 footer {
     background-color: var(--grn);
     color: var(--wheat);
@@ -244,7 +246,6 @@ footer {
 }
 
 .details {
-
     text-decoration: none;
     line-height: 2rem;
     color: var(--wheat);
@@ -256,10 +257,17 @@ footer {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 640px) {
     .container {
         width: 90%
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -268,15 +276,7 @@ footer {
     }
 
     h1 {
-        font-size: 4rem
-    }
-
-    nav {
-        width: 90%;
-    }
-
-    #profile-img {
-        transform: scale(.9);
+        font-size: 2rem
     }
 
     .class-card {
