@@ -1,4 +1,4 @@
-# Antonio's Portfolio
+# My Portfolio
 
 
 ## Description
@@ -13,12 +13,12 @@ N/A
 
 ## Usage
 
-Browse through Antonio's work samples [HERE](https://trahy.github.io/w2-mockup-portfolio/). Each work will direct to another website.
+Browse through my work samples [HERE](https://trahy.github.io/w2-mockup-portfolio/). Each work will direct to another website.
 
 
 The following image shows what the webpage should look like:
 
-![screenshot of Antonio's portfolio](assets/images/screenshot.png)
+![screenshot of My Portfolio](assets/images/screenshot.png)
 
 
 ## Credits

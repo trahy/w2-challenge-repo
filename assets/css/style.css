@@ -75,22 +75,30 @@ h2 {
 /* centring about-me section */
 .about-me {
     width: 100%;
-    display: flex;
     margin: 0 auto;
 }
 
+
+#profile-container {
+    display: flex;
+}
+
 /* profile picture */
+
 #profile-img {
-    object-fit: cover;
-    max-width: 350px;
-    max-height: 350px;
-    width: 50vw;
-    height: 50vw;
+    background-image: url("../images/profile-img.jpg");
+    background-size: 110%;
+    background-position: center;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     border: solid 5px var(--gld);
 }
 
 .profile-txt {
+    width: fit-content;
     font-size: 1.25rem;
     line-height: 2rem;
     color: var(--grn);
@@ -163,7 +171,7 @@ h2 {
 
 /* background images for cards */
 .class-card:nth-child(1) .work-card {
-    background-image: url("../images/image1.jpg");
+    background-image: url("../images/Lyrynx.png");
     background-size: cover;
     background-position: center;
     border-radius: var(--bg-rad);
@@ -285,8 +293,12 @@ footer {
 }
 
 @media only screen and (max-width: 1280px) {
-    .about-me {
+    #profile-container {
         flex-direction: column;
+    }
+
+    #img-container{
+        justify-content: center;
     }
 
     #profile-img {
