@@ -13,7 +13,7 @@ N/A
 
 ## Usage
 
-Browse through Antonio's work samples. Each work will direct to another website.
+Browse through Antonio's work samples [HERE](https://trahy.github.io/w2-mockup-portfolio/). Each work will direct to another website.
 
 
 The following image shows what the webpage should look like:
