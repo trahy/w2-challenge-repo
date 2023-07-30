@@ -13,7 +13,7 @@ N/A
 
 ## Usage
 
-Browse through my work samples [HERE](https://trahy.github.io/w2-mockup-portfolio/). Each work will direct to another website.
+Browse through my work samples [HERE](https://trahy.github.io/w2-my-portfolio/). Each work will direct to another website.
 
 
 The following image shows what the webpage should look like:
@@ -25,7 +25,6 @@ The following image shows what the webpage should look like:
 
 The following links are featured on the website:
 
-- https://www.w3schools.com/howto/tryhow_make_a_website.htm
 - https://lcdtech.info/en/tests/dead.pixel.htm
 - https://ismyinternetworking.com/
 - https://www.bouncingdvdlogo.com/
