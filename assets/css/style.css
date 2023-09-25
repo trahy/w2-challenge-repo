@@ -178,14 +178,14 @@ h2 {
 }
 
 .class-card:nth-child(2) .work-card {
-    background-image: url("../images/image2.jpg");
+    background-image: url("../images/ReadMi.png");
     background-size: cover;
     background-position: center;
     border-radius: var(--bg-rad);
 }
 
 .class-card:nth-child(3) .work-card {
-    background-image: url("../images/image3.jpg");
+    background-image: url("../images/WeatherApp.png");
     background-size: cover;
     background-position: center;
     border-radius: var(--bg-rad);

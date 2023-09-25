@@ -3,7 +3,7 @@
 
 ## Description
 
-This webpage is an online portfolio which features deployed work samples. 
+This webpage is my online portfolio which features deployed work samples. 
 
 
 ## Installation
@@ -18,15 +18,13 @@ Browse through my work samples [HERE](https://trahy.github.io/w2-my-portfolio/).
 
 The following image shows what the webpage should look like:
 
-![screenshot of My Portfolio](assets/images/screenshot.png)
+![screenshot of My Portfolio](assets/images/screencapture.png)
 
 
 ## Credits
 
-The following links are featured on the website:
+The following links are featured on the website as placeholders:
 
-- https://lcdtech.info/en/tests/dead.pixel.htm
-- https://ismyinternetworking.com/
 - https://www.bouncingdvdlogo.com/
 - https://hackertyper.net/
 
